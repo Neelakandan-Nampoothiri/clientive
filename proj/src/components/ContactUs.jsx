@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import Title from './Title'
 import assets from '../assets/assets'
 import toast from 'react-hot-toast';
+import {motion} from 'motion/react'
+
+
 
 const ContactUs = () => {
 
@@ -39,11 +42,25 @@ const ContactUs = () => {
   ;
 
   return (
-    <div id='contact-us' className='flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 dark:text-white text-gray-700 pt-30'>
+    <motion.div 
+    initial='hidden'
+        whileInView='visible'
+        transition={{staggerChildren:0.2}}
+        viewport={{once:true}}
+    
+    id='contact-us' className='flex flex-col items-center gap-7 px-4 sm:px-12 lg:px-24 xl:px-40 dark:text-white text-gray-700 pt-30'>
         <div>
             <Title title='Reach out to us' desc='From strategy to execution, we craft digital solutions that move your business forward.'/> 
 
-            <form className='grid sm:grid-cols-2 gap-3 sm:gap-5 w-full max-w-2xl mt-10' onSubmit={onSubmit}>
+            <motion.form 
+
+            initial={{opacity:0 ,y:30}}
+                        whileInView={{opacity:1, y:0}}
+                        transition={{duration:0.6, delay:0.4}}
+                        viewport={{once:true}}
+            
+            
+            className='grid sm:grid-cols-2 gap-3 sm:gap-5 w-full max-w-2xl mt-10' onSubmit={onSubmit}>
                 <div>
                     <p className='text-sm font-medium mb-2'>
                             Your name
@@ -75,10 +92,10 @@ const ContactUs = () => {
                     Submit <img src={assets.arrow_icon} className='w-4' alt=''/>
                 </button>
 
-            </form>
+            </motion.form>
         </div>
        
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import assets from '../assets/assets'
 import ThemeToggleBtn from './ThemeToggleBtn'
+import {motion} from 'motion/react' 
 
 
 const Navbar = ({theme,setTheme}) => {
@@ -8,7 +9,11 @@ const Navbar = ({theme,setTheme}) => {
   const [sidebarOpen,setSidebarOpen] = useState(false)
 
   return (
-    <div className='flex justify-between items-center px-4 
+    <motion.div 
+     initial={{opacity:0 ,y:-50}}
+     animate={{opacity:1 ,y:0}}
+     transition={{duration:0.6,ease:'easeOut'}}
+    className='flex justify-between items-center px-4 
     sm:px-12 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 
     backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70'>
       
@@ -24,10 +29,10 @@ const Navbar = ({theme,setTheme}) => {
           <img src={assets.close_icon}  className='w-5 absolute right-4 top-4 sm:hidden'
            alt='' onClick={()=>setSidebarOpen(false)}/>
 
-          <a href="#" className='sm:hover:border-b' onClick={()=>setSidebarOpen(false)}>Home</a>
-          <a href="#services" className='sm:hover:border-b' onClick={()=>setSidebarOpen(false)}>Services</a>
-          <a href="#our-work" className='sm:hover:border-b' onClick={()=>setSidebarOpen(false)}>Our Work</a>
-          <a href="#contact-us" className='sm:hover:border-b' onClick={()=>setSidebarOpen(false)}>Contact Us</a>
+          <a href="#" className='sm:hover:border-b border-primary' onClick={()=>setSidebarOpen(false)}>Home</a>
+          <a href="#services" className='sm:hover:border-b border-primary' onClick={()=>setSidebarOpen(false)}>Services</a>
+          <a href="#our-work" className='sm:hover:border-b border-primary' onClick={()=>setSidebarOpen(false)}>Our Work</a>
+          <a href="#contact-us" className='sm:hover:border-b border-primary' onClick={()=>setSidebarOpen(false)}>Contact Us</a>
        </div>
 
         <div className='flex items-center gap-2 sm:gap-4'>
@@ -43,7 +48,7 @@ const Navbar = ({theme,setTheme}) => {
         </div>
 
 
-    </div>
+    </motion.div>
   )
 }
       
