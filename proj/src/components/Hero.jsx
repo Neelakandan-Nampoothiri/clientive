@@ -17,7 +17,7 @@ const Hero = () => {
 
         className='inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full'>
             <img src={assets.group_profile} alt='' className='w-20'/>
-            <p className='text-xs font-medium'>Trusted by 10k+ people</p>
+            <p className='text-xs font-medium'>Trusted by 10k+ clients</p>
        </motion.div>
        
        <motion.h1 
@@ -29,8 +29,8 @@ const Hero = () => {
        
        className='text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-94px 
        max-w-5xl' >
-        Turning Imagination into <span className='bg-linear-to-r from-[#5044E5] to-[#4d8cea] bg-clip-text 
-        text-transparent'>digital</span><span> impact.</span></motion.h1>
+        Turning client visuals into <span className='bg-[linear-gradient(135deg,#00F5FF_0%,#00C6FF_50%,#0072FF_100%)] bg-clip-text 
+        text-transparent'>digital</span><span> success</span></motion.h1>
     
         <motion.p 
         
@@ -40,7 +40,7 @@ const Hero = () => {
         viewport={{once:true}}
 
         className='text-sm sm:text-lg font-medium text-gray-500 dark:text-white/75 max-w-4/5 sm:max-w-lg pb-3'>
-        Creating meaningful connections and turning big ideas into interactive digital experiences.</motion.p>
+        Buiding meaningful digital experiences thar drive growth, success and impact</motion.p>
 
         <motion.div 
         
