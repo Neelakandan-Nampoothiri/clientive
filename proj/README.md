@@ -1,16 +1,89 @@
-# React + Vite
+# Clientive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React + Vite frontend (landing/marketing) scaffold used in this workspace. Built with Vite, React 19, and a simple ESLint configuration.
 
-Currently, two official plugins are available:
+**Key features**
+- Fast dev server with HMR using Vite
+- Modern React (hooks + components)
+- Lightweight component structure for a landing page (Hero, Services, Teams, Contact, etc.)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Tech stack**
+- React 19
+- Vite
+- ESLint
+- Dev tooling: @vitejs/plugin-react
 
-## React Compiler
+## Repo structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Top-level project files live in this folder. Important source files:
 
-## Expanding the ESLint configuration
+- `index.html` — Vite entry HTML
+- `src/main.jsx` — App bootstrap
+- `src/App.jsx` — Root component
+- `src/index.css` — Global styles
+- `src/assets/assets.js` — image/asset references
+- `src/components/` — UI components (see list below)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Notable component files in `src/components`:
+
+- `Navbar.jsx`
+- `Hero.jsx`
+- `Services.jsx`
+- `ServiceCard.jsx`
+- `OurWork.jsx`
+- `Teams.jsx`
+- `TrustedBy.jsx`
+- `ContactUs.jsx`
+- `Footer.jsx`
+- `ThemeToggleBtn.jsx`
+- `Title.jsx`
+
+## Available scripts
+
+Run these from the `proj` folder.
+
+- Install dependencies
+
+```bash
+npm install
+```
+
+- Start development server (HMR)
+
+```bash
+npm run dev
+```
+
+- Build for production
+
+```bash
+npm run build
+```
+
+- Preview the production build locally
+
+```bash
+npm run preview
+```
+
+- Lint the codebase
+
+```bash
+npm run lint
+```
+
+## Development notes
+
+- The project uses Vite (`vite.config.js`) and the React plugin (`@vitejs/plugin-react`).
+- ESLint config is in `eslint.config.js` and can be adjusted to match your preferred rules.
+- If you add assets, update `src/assets/assets.js` to export or reference them consistently.
+
+## Contributing
+
+Small changes are welcome. For larger features, create a branch and open a PR against `main`.
+
+## License & contact
+
+This repository does not include a license file. Add one if you intend to publish or share the project.
+
+If you need help running or extending the project, open an issue or contact the maintainer.

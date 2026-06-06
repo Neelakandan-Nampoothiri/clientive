@@ -8,8 +8,8 @@ const OurWork = () => {
 
     const workdata = [
         {
-            title: 'Clientive',
-            description: 'A service-driven platform for modern client solutions.',
+            title: 'ParkAi Web',
+            description: 'Smart parking solutions that save time, fuel, and frustration.',
             image : assets.web_dev
 
 

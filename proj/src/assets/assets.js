@@ -94,7 +94,8 @@ export const teamData = [
   { name: 'Krishnan Nampoothiri', title: 'UI/UX Designer', image: krishnan },
   { name: 'Karthik R', title: 'Operations Manager', image: karthik },
   { name: 'Vysakh P', title: 'Project Manager', image: vyshak },
-  { name: 'Karthikeyan TV', title: 'Developer', image: karthikeyan },
+  { name: 'Vismaya Gawri Krishnan', title: 'Lead Developer', image: vismaya },
   { name: 'Abhiram J', title: 'Web Developer', image: abhiram },
-  { name: 'Vismaya Gawri Krishnan', title: 'App Developer', image: vismaya },
+  { name: 'Karthikeyan TV', title: 'App Developer', image: karthikeyan}
+
 ]

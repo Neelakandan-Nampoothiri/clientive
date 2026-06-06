@@ -8,7 +8,7 @@ const Footer = ({theme}) => {
   return (
     <motion.div
     
-    initial={{opacity:0 ,x:30}}
+    initial={{opacity:0 ,y:-30}}
                         whileInView={{opacity:1, x:0}}
                         transition={{duration:0.6,delay:0.3}}
                         viewport={{once:true}}
@@ -62,7 +62,7 @@ const Footer = ({theme}) => {
                         viewport={{once:true}}
 
             className='flex justify-center pb-6 text-sm text-gray-500 sm:justify-between gap-4 flex-wrap'>
-                <p>Copyright 2026 @ Clientive - All Right Reserved.</p>
+                <p>Copyright 2026 @ Origin - All Right Reserved.</p>
                 <div className='flex items-center justify-between gap-4'>
                     <img src={assets.facebook_icon} alt=''/>
                     <img src={assets.twitter_icon} alt=''/>

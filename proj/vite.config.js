@@ -12,6 +12,6 @@ export default defineConfig({
   preview: {
     host: '0.0.0.0',
     port: process.env.PORT,
-    allowedHosts: ['clientive.onrender.com']
+    allowedHosts: ['origin.onrender.com']
   }
 })
