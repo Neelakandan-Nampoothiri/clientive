@@ -8,11 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-
-  build:{
-    cssMinify:'esbuild'
-  },
-  
     preview: {
     host: '0.0.0.0',
     port: process.env.PORT,
